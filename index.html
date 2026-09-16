@@ -1,0 +1,2599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="rg-build" content="2026.09.16.5">
+<meta name="theme-color" content="#071a46">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E%F0%9F%8E%AE%3C/text%3E%3C/svg%3E">
+
+<title>RacharlaGPT.in Games – Free Online Mini Games & Quick Brain Games</title>
+
+<meta name="description" content="Play free browser mini games at RacharlaGPT.in: Spin Wheel, Dice Roll, Coin Toss, Rock Paper Scissors, Reaction Challenge, Memory Match, and 2048. Fast, mobile-friendly games for quick fun.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="googlebot" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://spin.racharlagpt.in/">
+<meta name="theme-color" content="#071a46">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://spin.racharlagpt.in/">
+<meta property="og:title" content="RacharlaGPT.in Games – Free Online Mini Games">
+<meta property="og:description" content="Play free Spin Wheel, Dice, Coin Toss, Rock Paper Scissors, Reaction Challenge, Memory Match, and 2048 games online.">
+<meta property="og:site_name" content="RacharlaGPT Games">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="RacharlaGPT.in Games – Free Online Mini Games">
+<meta name="twitter:description" content="Play free browser mini games on mobile and desktop.">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://spin.racharlagpt.in/#website",
+      "url": "https://spin.racharlagpt.in/",
+      "name": "RacharlaGPT Games",
+      "description": "Free online mini games including Dice Roll, Coin Toss, Rock Paper Scissors, Reaction Challenge, and Spin Wheel.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "RacharlaGPT",
+        "url": "https://racharlagpt.in/"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://spin.racharlagpt.in/#game",
+      "name": "RacharlaGPT Games",
+      "url": "https://spin.racharlagpt.in/",
+      "description": "A free browser collection of quick mini games: Dice Roll, Coin Toss, Rock Paper Scissors, Reaction Challenge, and Spin Wheel.",
+      "applicationCategory": "GameApplication",
+      "operatingSystem": "Web Browser",
+      "browserRequirements": "Requires JavaScript",
+      "isAccessibleForFree": true,
+      "publisher": {
+        "@type": "Organization",
+        "name": "RacharlaGPT",
+        "url": "https://racharlagpt.in/"
+      }
+    }
+  ]
+}
+</script>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --gold: #ffd76a;
+    --gold-light: #fff1a8;
+    --gold-dark: #c99625;
+    --blue: #071a46;
+    --blue-light: #123b87;
+    --glass: rgba(9, 28, 69, 0.68);
+    --white: #ffffff;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: white;
+    overflow-x: hidden;
+
+    background:
+        radial-gradient(
+            circle at 15% 15%,
+            rgba(255, 215, 106, 0.20),
+            transparent 25%
+        ),
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(39, 122, 255, 0.28),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 50% 100%,
+            rgba(255, 190, 50, 0.16),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #020817 0%,
+            #061a45 45%,
+            #071d52 70%,
+            #020817 100%
+        );
+
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: rgba(255, 210, 80, 0.08);
+    filter: blur(100px);
+    top: -180px;
+    left: -150px;
+    pointer-events: none;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: rgba(0, 119, 255, 0.12);
+    filter: blur(110px);
+    bottom: -180px;
+    right: -150px;
+    pointer-events: none;
+}
+
+/* ================= STARS ================= */
+
+.stars {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.star {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: #fff5bf;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #ffd76a;
+    animation: twinkle 3s infinite ease-in-out;
+}
+
+@keyframes twinkle {
+    0%, 100% {
+        opacity: .15;
+        transform: scale(.7);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.5);
+    }
+}
+
+/* ================= APP ================= */
+
+.app {
+    width: min(1180px, 94%);
+    margin: auto;
+    position: relative;
+    z-index: 2;
+    padding: 24px 0 35px;
+}
+
+/* ================= BRAND BANNER ================= */
+
+.top-banner {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.powered {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 20px;
+    border-radius: 999px;
+
+    background: rgba(4, 19, 50, .78);
+    border: 1px solid rgba(255, 215, 106, .45);
+
+    box-shadow:
+        0 0 25px rgba(255, 215, 106, .12),
+        inset 0 0 20px rgba(255, 255, 255, .025);
+
+    font-size: 13px;
+    letter-spacing: .7px;
+    color: #dbe7ff;
+}
+
+.brand-gold {
+    color: #ffd65f;
+    font-weight: 900;
+}
+
+.brand-blue {
+    color: #63b7ff;
+    font-weight: 900;
+}
+
+/* ================= HEADER ================= */
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 8px 17px;
+    border-radius: 999px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(255, 204, 72, .17),
+            rgba(71, 155, 255, .16)
+        );
+
+    border: 1px solid rgba(255, 215, 106, .5);
+    color: var(--gold-light);
+
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.7px;
+
+    box-shadow:
+        0 0 22px rgba(255, 215, 106, .12);
+}
+
+h1 {
+    margin-top: 15px;
+    font-size: clamp(38px, 7vw, 68px);
+    line-height: 1;
+    font-weight: 900;
+
+    background:
+        linear-gradient(
+            90deg,
+            #fff6c7,
+            #ffd45a,
+            #ffffff,
+            #7ec5ff
+        );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    text-shadow:
+        0 0 30px rgba(255, 215, 106, .15);
+}
+
+.subtitle {
+    margin: 15px auto 0;
+    max-width: 680px;
+    color: #b9c9e8;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* ================= MAIN CARD ================= */
+
+.game-card {
+    position: relative;
+    padding: 28px;
+    border-radius: 32px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(13, 40, 91, .80),
+            rgba(3, 17, 45, .78)
+        );
+
+    border: 1px solid rgba(255, 215, 106, .24);
+
+    box-shadow:
+        0 30px 80px rgba(0, 0, 0, .42),
+        inset 0 1px 0 rgba(255,255,255,.08),
+        0 0 50px rgba(24, 105, 210, .10);
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+}
+
+.game-layout {
+    display: grid;
+
+    /*
+       Wheel + larger brand area
+    */
+    grid-template-columns: 1.15fr .85fr;
+
+    align-items: center;
+    gap: 30px;
+}
+
+/* ================= WHEEL ================= */
+
+.wheel-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wheel-wrapper {
+    width: min(560px, 90vw);
+    aspect-ratio: 1;
+    position: relative;
+
+    display: grid;
+    place-items: center;
+}
+
+.wheel-glow {
+    position: absolute;
+
+    width: 92%;
+    height: 92%;
+
+    border-radius: 50%;
+
+    background: rgba(255, 200, 60, .12);
+    filter: blur(28px);
+
+    animation:
+        wheelGlow 2.7s infinite ease-in-out;
+}
+
+@keyframes wheelGlow {
+    0%, 100% {
+        transform: scale(.94);
+        opacity: .5;
+    }
+
+    50% {
+        transform: scale(1.03);
+        opacity: .9;
+    }
+}
+
+#wheel {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+    z-index: 2;
+
+    cursor: pointer;
+
+    filter:
+        drop-shadow(0 18px 28px rgba(0,0,0,.5))
+        drop-shadow(0 0 16px rgba(255,215,106,.2));
+}
+
+/* ================= POINTER ================= */
+
+.pointer-container {
+    position: absolute;
+
+    top: -13px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    z-index: 10;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pointer-light {
+    width: 15px;
+    height: 15px;
+
+    border-radius: 50%;
+
+    background: #ffe88a;
+
+    box-shadow:
+        0 0 8px #fff,
+        0 0 20px #ffd23f,
+        0 0 35px #ffb300;
+
+    margin-bottom: -3px;
+
+    animation:
+        pointerBlink 1.05s infinite ease-in-out;
+}
+
+.pointer {
+    width: 0;
+    height: 0;
+
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 57px solid #ffd34f;
+
+    filter:
+        drop-shadow(0 4px 3px rgba(0,0,0,.65))
+        drop-shadow(0 0 12px rgba(255,207,55,.85));
+
+    animation:
+        pointerPulse 1.05s infinite ease-in-out;
+
+    transform-origin: 50% 0%;
+}
+
+@keyframes pointerBlink {
+    0%, 100% {
+        opacity: .45;
+        transform: scale(.82);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.3);
+    }
+}
+
+@keyframes pointerPulse {
+    0%, 100% {
+        transform: translateY(0) scaleY(1);
+    }
+
+    50% {
+        transform: translateY(4px) scaleY(1.08);
+    }
+}
+
+.pointer-container.spinning .pointer {
+    animation:
+        pointerPulse .35s infinite ease-in-out,
+        pointerShake .18s infinite;
+}
+
+.pointer-container.spinning .pointer-light {
+    animation:
+        pointerBlink .28s infinite;
+}
+
+@keyframes pointerShake {
+    0% {
+        transform: rotate(-3deg);
+    }
+
+    50% {
+        transform: rotate(3deg);
+    }
+
+    100% {
+        transform: rotate(-3deg);
+    }
+}
+
+.wheel-hint {
+    margin-top: 12px;
+    color: #aebfe0;
+    font-size: 13px;
+    text-align: center;
+}
+
+/* ================= SIDE PANEL ================= */
+
+.side-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+/* ================= BIG BRAND CARD ================= */
+
+.brand-card {
+    position: relative;
+
+    padding: 28px 24px;
+
+    border-radius: 26px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(9, 35, 83, .95),
+            rgba(3, 17, 45, .88)
+        );
+
+    border:
+        1px solid rgba(255, 215, 106, .38);
+
+    box-shadow:
+        0 18px 50px rgba(0,0,0,.30),
+        inset 0 1px 0 rgba(255,255,255,.08),
+        0 0 35px rgba(255,215,106,.08);
+
+    overflow: hidden;
+}
+
+.brand-card::before {
+    content: "";
+
+    position: absolute;
+
+    width: 170px;
+    height: 170px;
+
+    right: -80px;
+    top: -80px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255,215,106,.10);
+
+    filter: blur(15px);
+}
+
+.brand-card::after {
+    content: "";
+
+    position: absolute;
+
+    width: 150px;
+    height: 150px;
+
+    left: -100px;
+    bottom: -100px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(46,142,255,.13);
+
+    filter: blur(15px);
+}
+
+.brand-small {
+    position: relative;
+    z-index: 2;
+
+    color: #9db5df;
+
+    font-size: 11px;
+    font-weight: 900;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    margin-bottom: 9px;
+}
+
+.brand-name {
+    position: relative;
+    z-index: 2;
+
+    font-size: clamp(32px, 4vw, 48px);
+
+    line-height: 1;
+
+    font-weight: 950;
+
+    letter-spacing: -1.5px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #fff5bd,
+            #ffd34f,
+            #ffffff,
+            #70bdff
+        );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    text-shadow:
+        0 0 30px rgba(255,215,106,.16);
+}
+
+.brand-tagline {
+    position: relative;
+    z-index: 2;
+
+    margin-top: 12px;
+
+    color: #dce8ff;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    line-height: 1.5;
+}
+
+.brand-description {
+    position: relative;
+    z-index: 2;
+
+    margin-top: 13px;
+
+    color: #aebfdf;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+.brand-features {
+    position: relative;
+    z-index: 2;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 9px;
+
+    margin-top: 18px;
+}
+
+.feature {
+    padding: 10px 9px;
+
+    border-radius: 13px;
+
+    background:
+        rgba(255,255,255,.035);
+
+    border:
+        1px solid rgba(255,255,255,.07);
+
+    color: #dce7fb;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    text-align: center;
+}
+
+.visit-button {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    width: 100%;
+
+    margin-top: 18px;
+
+    padding: 14px 18px;
+
+    border-radius: 15px;
+
+    text-decoration: none;
+
+    color: #07142e;
+
+    font-size: 14px;
+    font-weight: 950;
+
+    letter-spacing: .6px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff0a4,
+            #ffd45a,
+            #eeb52e,
+            #fff0a4
+        );
+
+    box-shadow:
+        0 6px 0 #9b7015,
+        0 12px 28px rgba(255,194,49,.20);
+
+    transition:
+        transform .18s ease,
+        filter .18s ease,
+        box-shadow .18s ease;
+}
+
+.visit-button:hover {
+    transform: translateY(-3px);
+
+    filter: brightness(1.08);
+
+    box-shadow:
+        0 6px 0 #9b7015,
+        0 16px 38px rgba(255,194,49,.35),
+        0 0 25px rgba(255,215,106,.2);
+}
+
+.visit-button:active {
+    transform: translateY(3px);
+}
+
+/* ================= HOW TO PLAY ================= */
+
+.mini-card {
+    padding: 21px;
+
+    border-radius: 22px;
+
+    background:
+        rgba(3, 17, 45, .65);
+
+    border:
+        1px solid rgba(130, 180, 255, .16);
+
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.045),
+        0 14px 35px rgba(0,0,0,.18);
+}
+
+.mini-title {
+    color: var(--gold);
+
+    font-size: 12px;
+    font-weight: 900;
+
+    letter-spacing: 1.6px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+}
+
+.instructions {
+    color: #c8d5ed;
+
+    line-height: 1.65;
+
+    font-size: 14px;
+}
+
+/* ================= BUTTON ================= */
+
+.spin-btn {
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    cursor: pointer;
+
+    padding: 18px 25px;
+
+    border-radius: 17px;
+
+    color: #07142e;
+
+    font-size: 16px;
+    font-weight: 950;
+
+    letter-spacing: 1.2px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff0a4 0%,
+            #ffd45a 30%,
+            #eeb52e 65%,
+            #fff0a4 100%
+        );
+
+    box-shadow:
+        0 8px 0 #9b7015,
+        0 14px 30px rgba(255,194,49,.25),
+        inset 0 2px 2px rgba(255,255,255,.7);
+
+    transition:
+        transform .18s ease,
+        box-shadow .18s ease,
+        filter .18s ease;
+}
+
+.spin-btn:hover {
+    transform: translateY(-3px);
+
+    filter: brightness(1.08);
+
+    box-shadow:
+        0 8px 0 #9b7015,
+        0 18px 42px rgba(255,194,49,.38),
+        0 0 25px rgba(255,215,106,.3),
+        inset 0 2px 2px rgba(255,255,255,.8);
+}
+
+.spin-btn:active {
+    transform: translateY(5px);
+
+    box-shadow:
+        0 3px 0 #9b7015,
+        0 8px 20px rgba(255,194,49,.2);
+}
+
+.spin-btn:disabled {
+    cursor: not-allowed;
+    opacity: .72;
+    transform: none;
+}
+
+/* ================= RESULT ================= */
+
+.result {
+    display: none;
+
+    text-align: center;
+
+    padding: 25px 20px;
+
+    border-radius: 22px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,215,106,.10),
+            rgba(42,112,220,.10)
+        );
+
+    border:
+        1px solid rgba(255,215,106,.28);
+
+    animation:
+        resultIn .65s cubic-bezier(.17,.89,.32,1.25);
+}
+
+.result.show {
+    display: block;
+}
+
+@keyframes resultIn {
+    0% {
+        opacity: 0;
+        transform: scale(.75) translateY(25px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+.result-icon {
+    font-size: 62px;
+
+    line-height: 1;
+
+    margin-bottom: 12px;
+
+    filter:
+        drop-shadow(
+            0 0 15px rgba(255,215,106,.35)
+        );
+
+    animation:
+        resultIcon 1.2s infinite ease-in-out;
+}
+
+@keyframes resultIcon {
+    0%, 100% {
+        transform: translateY(0) rotate(-2deg);
+    }
+
+    50% {
+        transform: translateY(-7px) rotate(2deg);
+    }
+}
+
+.result-label {
+    color: #a8bbdf;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.7px;
+
+    text-transform: uppercase;
+}
+
+.result h2 {
+    margin-top: 7px;
+
+    font-size: 30px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #fff3af,
+            #ffd45a,
+            #fff
+        );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+}
+
+.result-message {
+    margin-top: 12px;
+
+    color: #cdd9ef;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+.result-note {
+    margin-top: 15px;
+
+    color: #ffd96e;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+    text-align: center;
+
+    margin-top: 25px;
+
+    color: #8094b9;
+
+    font-size: 12px;
+}
+
+.footer-brand {
+    margin-top: 7px;
+
+    font-size: 15px;
+
+    font-weight: 900;
+}
+
+.footer-brand-name {
+    background:
+        linear-gradient(
+            90deg,
+            #ffd65f,
+            #ffffff,
+            #63b7ff
+        );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+
+    font-weight: 950;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 850px) {
+
+    .app {
+        width: 94%;
+        padding-top: 20px;
+    }
+
+    .game-card {
+        padding: 20px;
+        border-radius: 26px;
+    }
+
+    .game-layout {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .side-panel {
+        max-width: 600px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .wheel-wrapper {
+        width: min(530px, 88vw);
+    }
+
+    .brand-card {
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+    .game-card {
+        padding: 14px;
+    }
+
+    .wheel-wrapper {
+        width: 92vw;
+    }
+
+    .pointer {
+        border-left-width: 19px;
+        border-right-width: 19px;
+        border-top-width: 47px;
+    }
+
+    .pointer-light {
+        width: 12px;
+        height: 12px;
+    }
+
+    .mini-card {
+        padding: 18px;
+    }
+
+    .brand-card {
+        padding: 24px 18px;
+    }
+
+    .brand-name {
+        font-size: 35px;
+    }
+
+    .brand-features {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .result h2 {
+        font-size: 25px;
+    }
+}
+
+/* ================= NEON MINI GAMES ================= */
+.neon-hub{margin:0 auto 22px;padding:18px;border-radius:24px;background:rgba(3,13,39,.78);border:1px solid rgba(99,183,255,.28);box-shadow:0 0 28px rgba(0,132,255,.12),inset 0 1px 0 rgba(255,255,255,.05);text-align:center}.hub-title{font-size:14px;font-weight:950;letter-spacing:2px;color:#8fd3ff;text-shadow:0 0 16px rgba(64,176,255,.7)}.hub-subtitle{margin-top:7px;color:#9eb5d9;font-size:12px}.game-tabs{display:flex;gap:10px;justify-content:center;margin-top:14px;flex-wrap:wrap}.game-tab,.choice-btn,.neon-action{border:1px solid rgba(255,255,255,.16);cursor:pointer;font-weight:950;letter-spacing:.8px;transition:.18s ease}.game-tab{padding:11px 18px;border-radius:999px;color:#dcecff;background:rgba(13,38,82,.75)}.game-tab:hover,.game-tab.active{color:#06132d;background:linear-gradient(135deg,#fff09b,#ffd24f,#6ec8ff);box-shadow:0 0 22px rgba(255,210,79,.35),0 0 28px rgba(78,179,255,.18);transform:translateY(-2px)}.extra-games{display:none;margin:0 auto 22px}.extra-games.show{display:block}.extra-game-card{max-width:700px;margin:auto;padding:30px 22px;border-radius:30px;text-align:center;background:linear-gradient(145deg,rgba(7,31,73,.92),rgba(2,13,35,.92));border:1px solid rgba(91,190,255,.35);box-shadow:0 25px 70px rgba(0,0,0,.4),0 0 38px rgba(0,137,255,.12),inset 0 1px 0 rgba(255,255,255,.07)}.extra-icon{font-size:62px;filter:drop-shadow(0 0 18px rgba(96,194,255,.55))}.extra-title{margin-top:9px;font-size:27px;font-weight:950;letter-spacing:1.5px;background:linear-gradient(90deg,#fff2a8,#ffd34f,#fff,#68c6ff);-webkit-background-clip:text;background-clip:text;color:transparent}.extra-text{margin:10px auto 18px;max-width:560px;color:#b8c9e6;line-height:1.6;font-size:14px}.choice-row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:14px}.choice-btn{padding:11px 18px;border-radius:14px;color:#d9eaff;background:rgba(12,43,88,.8)}.choice-btn.selected{color:#07152f;background:linear-gradient(135deg,#fff0a0,#ffd044,#70c9ff);box-shadow:0 0 24px rgba(255,211,70,.35)}.neon-action{width:min(420px,92%);padding:15px 20px;border-radius:16px;color:#06132d;background:linear-gradient(135deg,#fff1a4,#ffd34d,#70caff,#fff1a4);box-shadow:0 6px 0 #927017,0 0 25px rgba(87,188,255,.18),0 14px 30px rgba(255,194,49,.2)}.neon-action:hover{transform:translateY(-3px);filter:brightness(1.08)}.neon-action:active{transform:translateY(3px)}.coin-stage,.dice-stage{min-height:155px;display:grid;place-items:center;margin-top:16px}.coin{width:112px;height:112px;display:grid;place-items:center;border-radius:50%;font-size:70px;background:radial-gradient(circle,rgba(255,225,105,.24),rgba(15,57,110,.55));border:3px solid #ffd85b;box-shadow:0 0 18px #ffd85b,0 0 48px rgba(71,180,255,.35)}.coin.flipping{animation:coinFlip .9s ease-in-out}@keyframes coinFlip{0%{transform:rotateY(0) scale(1)}50%{transform:rotateY(900deg) scale(1.12)}100%{transform:rotateY(1800deg) scale(1)}}.dice{width:110px;height:110px;display:grid;place-items:center;border-radius:24px;font-size:75px;background:linear-gradient(145deg,rgba(32,86,155,.9),rgba(4,22,54,.95));border:2px solid #6ecaff;box-shadow:0 0 20px rgba(74,189,255,.7),inset 0 0 22px rgba(255,255,255,.05)}.dice.rolling{animation:diceRoll .75s ease-in-out}@keyframes diceRoll{0%{transform:rotate(0) scale(1)}35%{transform:rotate(180deg) scale(1.12)}70%{transform:rotate(360deg) scale(.94)}100%{transform:rotate(720deg) scale(1)}}.extra-result{margin-top:6px;min-height:28px;color:#e5eeff;font-size:16px;font-weight:850;text-shadow:0 0 14px rgba(105,196,255,.45)}
+
+/* ================= ADSENSE-READY CONTENT + RPS ================= */
+.rps-row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:18px 0 8px}.rps-btn{min-width:120px}.rps-battle{display:flex;align-items:center;justify-content:center;gap:22px;font-size:48px;margin:14px 0}.rps-battle span{font-size:16px;font-weight:800;color:var(--gold)}
+.info-nav{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:18px auto 6px}.info-nav a{color:#fff;text-decoration:none;border:1px solid rgba(255,215,106,.28);background:rgba(7,26,70,.55);padding:8px 13px;border-radius:999px;font-size:13px}.info-nav a:hover{border-color:var(--gold);color:var(--gold-light)}
+.site-info{max-width:980px;margin:30px auto 0;padding:0 14px}.info-card{background:rgba(7,26,70,.72);border:1px solid rgba(255,215,106,.18);box-shadow:0 12px 40px rgba(0,0,0,.25);border-radius:20px;padding:26px;margin:16px 0;color:#eaf1ff}.info-card h2{color:var(--gold-light);margin-bottom:12px;font-size:24px}.info-card h3{color:#fff;margin:18px 0 7px;font-size:17px}.info-card p,.info-card li{font-size:14px;line-height:1.7;color:#d9e5ff}.info-card ul{padding-left:22px}.site-footer{text-align:center;padding:30px 14px 40px;color:#aebfdf;font-size:13px}.site-footer a{color:var(--gold-light);text-decoration:none}.footer-links{display:flex;justify-content:center;gap:15px;flex-wrap:wrap;margin:12px 0}
+
+
+/* ================= SCORE + REACTION CHALLENGE ================= */
+.score-bar{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;max-width:700px;margin:0 auto 18px}.score-box{padding:12px 10px;border-radius:16px;text-align:center;background:rgba(7,31,73,.72);border:1px solid rgba(110,202,255,.25);box-shadow:0 0 20px rgba(0,137,255,.10)}.score-number{font-size:22px;font-weight:950;color:#fff1a4;text-shadow:0 0 14px rgba(255,211,70,.5)}.score-label{font-size:10px;letter-spacing:1px;color:#9eb5d9;margin-top:3px;font-weight:800}.reaction-stage{margin:20px auto 8px;display:grid;place-items:center}.reaction-light{width:min(330px,88%);height:130px;border-radius:26px;display:grid;place-items:center;font-size:22px;font-weight:950;letter-spacing:2px;color:#dbeaff;background:radial-gradient(circle at 50% 45%,rgba(50,116,180,.42),rgba(3,18,45,.92));border:2px solid rgba(110,202,255,.5);box-shadow:0 0 25px rgba(55,175,255,.2);user-select:none;cursor:pointer}.reaction-light.go{background:radial-gradient(circle at 50% 45%,rgba(105,255,155,.9),rgba(5,100,54,.85));border-color:#73ffad;color:#041d10;box-shadow:0 0 30px rgba(73,255,143,.8),0 0 70px rgba(73,255,143,.35)}.reaction-light:active{transform:scale(.98)}@media(max-width:600px){.score-bar{gap:7px}.score-box{padding:10px 5px}.score-number{font-size:19px}}
+
+
+
+/* ================= AUDIO CONTROLS ================= */
+.audio-controls{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:16px auto 4px}
+.audio-control{border:1px solid rgba(255,255,255,.30);background:rgba(9,20,65,.78);color:#fff;border-radius:999px;padding:10px 16px;font-weight:800;letter-spacing:.2px;cursor:pointer;box-shadow:0 0 16px rgba(80,170,255,.18);backdrop-filter:blur(10px);transition:transform .18s ease,box-shadow .18s ease,background .18s ease}
+.audio-control:hover{transform:translateY(-2px);box-shadow:0 0 22px rgba(80,170,255,.32)}
+.audio-control.on{background:rgba(20,90,145,.95);box-shadow:0 0 24px rgba(0,220,255,.35)}
+@media (max-width:600px){.audio-controls{gap:7px}.audio-control{padding:9px 13px;font-size:13px}}
+
+
+/* ================= MEMORY MATCH ================= */
+.memory-board{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;max-width:430px;margin:18px auto}.memory-card{aspect-ratio:1;border:1px solid rgba(255,215,106,.25);border-radius:16px;background:linear-gradient(145deg,rgba(14,54,111,.95),rgba(3,18,48,.95));color:#fff;font-size:30px;cursor:pointer;display:grid;place-items:center;box-shadow:0 8px 20px rgba(0,0,0,.22),inset 0 0 18px rgba(100,180,255,.08);transition:transform .18s ease,box-shadow .18s ease,background .18s ease}.memory-card:hover{transform:translateY(-2px);box-shadow:0 0 22px rgba(91,194,255,.25)}.memory-card.flipped,.memory-card.matched{background:linear-gradient(145deg,#173f83,#071b49);border-color:rgba(255,215,106,.55)}.memory-card.matched{box-shadow:0 0 24px rgba(110,255,186,.25)}
+
+/* ================= 2048 ================= */
+.game2048-grid{width:min(360px,92vw);aspect-ratio:1;margin:18px auto;padding:8px;border-radius:18px;background:#9b6d16;display:grid;grid-template-columns:repeat(4,1fr);gap:8px;box-shadow:0 0 30px rgba(255,215,106,.18)}.tile2048{display:grid;place-items:center;border-radius:12px;background:#17396f;color:#fff;font-size:26px;font-weight:950;min-height:68px}.tile2048.v2{background:#2d5fa0}.tile2048.v4{background:#467db8}.tile2048.v8{background:#bc8525}.tile2048.v16{background:#d8a131}.tile2048.v32{background:#e4b33f}.tile2048.v64{background:#f0c85b}.tile2048.v128{background:#f4dc7f;color:#2b2140}.tile2048.v256{background:#92d2ff;color:#08203d}.tile2048.v512{background:#66bbff;color:#06203a}.tile2048.v1024,.tile2048.v2048{background:linear-gradient(135deg,#fff1a5,#ffd34e,#73c8ff);color:#07142e}.game2048-controls{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:10px}.game2048-status{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;color:#cfe0ff;font-size:13px}.game2048-note{margin-top:10px;color:#92a9d4;font-size:12px}
+
+/* ================= NON-DISRUPTIVE UPDATE BANNER ================= */
+.rg-update{position:fixed;left:50%;bottom:18px;transform:translateX(-50%) translateY(140%);z-index:1000;width:min(520px,92%);padding:13px 14px;border-radius:16px;background:rgba(4,18,48,.96);border:1px solid rgba(255,215,106,.35);box-shadow:0 18px 45px rgba(0,0,0,.45),0 0 22px rgba(255,215,106,.12);display:flex;align-items:center;gap:12px;opacity:0;pointer-events:none;transition:.3s ease}.rg-update.show{transform:translateX(-50%) translateY(0);opacity:1;pointer-events:auto}.rg-update-copy{flex:1}.rg-update-title{display:block;font-weight:950;color:#fff0a4;font-size:14px}.rg-update-text{display:block;color:#b8c8e5;font-size:12px;margin-top:3px;line-height:1.4}.rg-update-btn{border:0;border-radius:12px;padding:10px 13px;background:linear-gradient(135deg,#fff0a4,#ffd34e);color:#081630;font-weight:950;cursor:pointer}.rg-update-close{border:0;background:transparent;color:#9fb3d8;cursor:pointer;font-size:18px;padding:3px}
+
+/* ================= AD-SAFE SPACING ================= */
+.ad-slot{min-height:90px;margin:26px auto;display:flex;align-items:center;justify-content:center;color:#65789d;font-size:10px;letter-spacing:1px;text-transform:uppercase}.ad-slot span{opacity:.55}
+@media(max-width:600px){.memory-board{gap:7px}.memory-card{font-size:24px;border-radius:13px}.game2048-grid{gap:6px;padding:6px}.tile2048{min-height:58px;font-size:22px}.rg-update{bottom:10px}.ad-slot{min-height:70px;margin:18px auto}}
+
+</style>
+<!-- Google Analytics 4 (GA4)
+     Replace G-BYY1EYHPVS with your real Measurement ID.
+     Do NOT put names, emails, phone numbers, or other personal information into GA4.
+-->
+<script>
+  window.RG_GA_MEASUREMENT_ID = "G-BYY1EYHPVS";
+  if (/^G-[A-Z0-9]+$/i.test(window.RG_GA_MEASUREMENT_ID) && !window.RG_GA_MEASUREMENT_ID.includes("REPLACE")) {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag = gtag;
+    gtag('js', new Date());
+    gtag('config', window.RG_GA_MEASUREMENT_ID);
+    const gaScript = document.createElement('script');
+    gaScript.async = true;
+    gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(window.RG_GA_MEASUREMENT_ID);
+    document.head.appendChild(gaScript);
+  }
+
+  function rgAnalyticsEvent(eventName, params) {
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', eventName, params || {});
+    }
+  }
+</script>
+
+<!-- Google AdSense: add your real ca-pub-XXXXXXXXXXXXXXX value when your AdSense account is approved. -->
+<script>
+  window.RG_ADSENSE_CLIENT = "ca-pub-REPLACE_WITH_YOUR_PUBLISHER_ID";
+  if (/^ca-pub-[0-9]+$/.test(window.RG_ADSENSE_CLIENT)) {
+    const adsenseScript = document.createElement('script');
+    adsenseScript.async = true;
+    adsenseScript.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' + encodeURIComponent(window.RG_ADSENSE_CLIENT);
+    adsenseScript.crossOrigin = 'anonymous';
+    document.head.appendChild(adsenseScript);
+  }
+</script>
+
+</head>
+
+<body>
+
+<div class="rg-update" id="rgUpdate" role="status" aria-live="polite">
+  <div class="rg-update-copy">
+    <span class="rg-update-title" id="rgUpdateTitle">✨ New version available</span>
+    <span class="rg-update-text" id="rgUpdateText">A newer version of RacharlaGPT.in Games is ready.</span>
+  </div>
+  <button class="rg-update-btn" id="rgUpdateBtn" type="button">Refresh</button>
+  <button class="rg-update-close" id="rgUpdateClose" type="button" aria-label="Close">×</button>
+</div>
+
+<!-- ================= BACKGROUND STARS ================= -->
+
+<div class="stars">
+
+    <span class="star"
+          style="left:8%;top:18%;animation-delay:.2s"></span>
+
+    <span class="star"
+          style="left:16%;top:72%;animation-delay:1s"></span>
+
+    <span class="star"
+          style="left:28%;top:12%;animation-delay:1.8s"></span>
+
+    <span class="star"
+          style="left:42%;top:86%;animation-delay:.5s"></span>
+
+    <span class="star"
+          style="left:55%;top:17%;animation-delay:2.1s"></span>
+
+    <span class="star"
+          style="left:67%;top:75%;animation-delay:.8s"></span>
+
+    <span class="star"
+          style="left:78%;top:28%;animation-delay:1.4s"></span>
+
+    <span class="star"
+          style="left:91%;top:66%;animation-delay:2.4s"></span>
+
+    <span class="star"
+          style="left:86%;top:10%;animation-delay:.7s"></span>
+
+    <span class="star"
+          style="left:35%;top:42%;animation-delay:1.2s"></span>
+
+</div>
+
+
+<div class="app">
+
+    <!-- ================= TOP BRAND ================= -->
+
+    <div class="top-banner">
+
+        <div class="powered">
+
+            <span>✨ Powered by</span>
+
+            <span class="brand-gold">
+                RacharlaGPT.in
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="badge">
+            ✨ MINI REFRESHMENT GAME
+        </div>
+
+        <h1>
+            Who Are You Today?
+        </h1>
+
+        <p class="subtitle">
+            Fun small games • quick refreshments — play for a moment, reset your mind, and enjoy. 🎮✨
+        </p>
+
+        <div class="audio-controls" aria-label="Game audio controls">
+          <button class="audio-control" id="musicToggle" type="button" onclick="toggleGameMusic()">🎵 Music: OFF</button>
+          <button class="audio-control on" id="soundToggle" type="button" onclick="toggleGameSound()">🔊 Sound: ON</button>
+        </div>
+
+    </header>
+
+    <!-- ================= NEON GAME HUB ================= -->
+    <section class="neon-hub" aria-label="Mini games">
+      <div class="hub-title">⚡ NEON MINI GAMES</div>
+      <div class="hub-subtitle">Choose a game — your original Spin Wheel stays unchanged.</div>
+      <div class="game-tabs">
+        <button class="game-tab active" id="tabDice" onclick="showGame('dice')">🎲 Dice</button>
+        <button class="game-tab" id="tabToss" onclick="showGame('toss')">🪙 Toss</button>
+        <button class="game-tab" id="tabRps" onclick="showGame('rps')">✊ RPS</button>
+        <button class="game-tab" id="tabReaction" onclick="showGame('reaction')">⚡ Reaction</button>
+        <button class="game-tab" id="tabMemory" onclick="showGame('memory')">🧠 Memory</button>
+        <button class="game-tab" id="tab2048" onclick="showGame('2048')">🔢 2048</button>
+        <button class="game-tab" id="tabSpin" onclick="showGame('spin')">🎡 Spin</button>
+      </div>
+    </section>
+
+    <section class="score-bar" aria-label="Game score">
+      <div class="score-box"><div class="score-number" id="scoreValue">0</div><div class="score-label">SCORE</div></div>
+      <div class="score-box"><div class="score-number" id="streakValue">0</div><div class="score-label">STREAK</div></div>
+      <div class="score-box"><div class="score-number" id="bestValue">0</div><div class="score-label">BEST DICE</div></div>
+    </section>
+
+    <nav class="info-nav" aria-label="Site information">
+      <a href="#about">About</a><a href="#how-to-play">How to Play</a><a href="#privacy">Privacy</a><a href="#terms">Terms</a>
+    </nav>
+
+    <section class="extra-games show" id="diceGame"><div class="extra-game-card">
+      <div class="extra-icon">🎲</div><div class="extra-title">NEON DICE ROLL</div>
+      <p class="extra-text">Roll the glowing die and enjoy a quick random challenge.</p>
+      <button class="neon-action" id="diceButton" onclick="rollDice()">🎲 ROLL THE DICE</button>
+      <div class="dice-stage"><div class="dice" id="dice">⚄</div></div><div class="extra-result" id="diceResult">Ready for your roll?</div>
+    </div></section>
+
+    <section class="extra-games" id="tossGame"><div class="extra-game-card">
+      <div class="extra-icon">🪙</div><div class="extra-title">NEON COIN TOSS</div>
+      <p class="extra-text">Choose your side, flip the glowing coin, and test your luck.</p>
+      <div class="choice-row"><button class="choice-btn" id="headsBtn" onclick="setCoinChoice('Heads')">🙂 HEADS</button><button class="choice-btn" id="tailsBtn" onclick="setCoinChoice('Tails')">😎 TAILS</button></div>
+      <button class="neon-action" id="tossButton" onclick="tossCoin()">🪙 FLIP COIN</button>
+      <div class="coin-stage"><div class="coin" id="coin">🪙</div></div><div class="extra-result" id="tossResult">Pick Heads or Tails to begin.</div>
+    </div></section>
+
+    <section class="extra-games" id="rpsGame"><div class="extra-game-card">
+      <div class="extra-icon">✊</div><div class="extra-title">NEON ROCK PAPER SCISSORS</div>
+      <p class="extra-text">A tiny classic for a fast break. Pick your move and play against the neon bot.</p>
+      <div class="rps-row"><button class="choice-btn rps-btn" onclick="playRps('Rock')">✊ ROCK</button><button class="choice-btn rps-btn" onclick="playRps('Paper')">✋ PAPER</button><button class="choice-btn rps-btn" onclick="playRps('Scissors')">✌️ SCISSORS</button></div>
+      <div class="rps-battle"><div id="rpsYou">🙂</div><span>VS</span><div id="rpsBot">🤖</div></div>
+      <div class="extra-result" id="rpsResult">Choose your move to begin.</div>
+    </div></section>
+
+    <section class="extra-games" id="reactionGame"><div class="extra-game-card">
+      <div class="extra-icon">⚡</div><div class="extra-title">REACTION CHALLENGE</div>
+      <p class="extra-text">Press start, wait for green, then tap the panel as fast as you can. Faster reactions earn more points.</p>
+      <button class="neon-action" id="reactionButton" onclick="startReaction()">⚡ START CHALLENGE</button>
+      <div class="reaction-stage"><div class="reaction-light" id="reactionLight">WAITING</div></div>
+      <div class="extra-result" id="reactionResult">Ready when you are.</div>
+    </div></section>
+
+
+    <!-- ================= MEMORY MATCH ================= -->
+    <section class="extra-games" id="memoryGame">
+      <div class="extra-game-card">
+        <div class="extra-icon">🧠</div>
+        <div class="extra-title">MEMORY MATCH</div>
+        <p class="extra-text">Flip two cards at a time and match all six pairs. Your moves and best result stay in this browser only.</p>
+        <div class="game2048-status"><span id="memoryMoves">Moves: 0</span><span id="memoryPairs">Pairs: 0/6</span><span id="memoryBest">Best: —</span></div>
+        <div class="memory-board" id="memoryBoard" aria-label="Memory match board"></div>
+        <div class="extra-result" id="memoryResult">Find the matching pairs.</div>
+        <div class="game2048-controls"><button class="neon-action" type="button" onclick="newMemoryGame()">🧠 NEW GAME</button></div>
+      </div>
+    </section>
+
+    <!-- ================= 2048 ================= -->
+    <section class="extra-games" id="game2048">
+      <div class="extra-game-card">
+        <div class="extra-icon">🔢</div>
+        <div class="extra-title">2048 MINI</div>
+        <p class="extra-text">Join equal tiles to reach 2048. Use your keyboard arrow keys or swipe on the board.</p>
+        <div class="game2048-status"><span id="score2048">Score: 0</span><span id="best2048">Best: 0</span></div>
+        <div class="game2048-grid" id="game2048Grid" tabindex="0" aria-label="2048 game board"></div>
+        <div class="extra-result" id="game2048Result">Use arrow keys or swipe to start.</div>
+        <div class="game2048-controls"><button class="neon-action" type="button" onclick="new2048Game()">🔄 NEW 2048</button></div>
+        <div class="game2048-note">Tip: keep your largest tile in one corner.</div>
+      </div>
+    </section>
+
+    <div class="ad-slot" aria-label="Advertisement"><span>Advertisement</span></div>
+
+    <!-- ================= GAME ================= -->
+
+    
+
+    <main class="game-card">
+
+        <div class="game-layout">
+
+
+            <!-- ================= WHEEL ================= -->
+
+            <section class="wheel-area">
+
+                <div class="wheel-wrapper">
+
+                    <div class="wheel-glow"></div>
+
+
+                    <!-- POINTER -->
+
+                    <div
+                        class="pointer-container"
+                        id="pointer"
+                    >
+
+                        <div class="pointer-light"></div>
+
+                        <div class="pointer"></div>
+
+                    </div>
+
+
+                    <!-- CANVAS -->
+
+                    <canvas
+                        id="wheel"
+                        width="600"
+                        height="600"
+                    ></canvas>
+
+                </div>
+
+
+                <p class="wheel-hint">
+                    🎯 The glowing pointer decides your result
+                </p>
+
+            </section>
+
+
+
+            <!-- ================= SIDE PANEL ================= -->
+
+            <section class="side-panel">
+
+
+                <!-- ================= BIG BRAND CARD ================= -->
+
+                <div class="brand-card">
+
+                    <div class="brand-small">
+                        YOUR AI • LEARNING • CAREER PLATFORM
+                    </div>
+
+
+                    <div class="brand-name">
+                        RacharlaGPT.in
+                    </div>
+
+
+                    <div class="brand-tagline">
+                        AI Programming • Learning • Career Progress
+                    </div>
+
+
+                    <div class="brand-description">
+
+                        Build your skills, learn programming,
+                        grow your career and create professional
+                        resumes — all in one place.
+
+                    </div>
+
+
+                    <div class="brand-features">
+
+                        <div class="feature">
+                            💻 AI Programming
+                        </div>
+
+                        <div class="feature">
+                            📚 Learn & Practice
+                        </div>
+
+                        <div class="feature">
+                            🚀 Career Growth
+                        </div>
+
+                        <div class="feature">
+                            📄 Resume Builder
+                        </div>
+
+                    </div>
+
+
+                    <a
+                        class="visit-button"
+                        href="https://racharlagpt.in"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        🚀 Visit RacharlaGPT.in
+                    </a>
+
+                </div>
+
+
+
+                <!-- ================= HOW TO PLAY ================= -->
+
+                <div class="mini-card">
+
+                    <div class="mini-title">
+                        🎡 How to play
+                    </div>
+
+                    <p class="instructions">
+
+                        Take a breath, think of yourself,
+                        then press the button and let the wheel
+                        choose a positive quality for you.
+
+                        There are no wrong answers —
+                        just a little positivity! ✨
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- ================= SPIN BUTTON ================= -->
+
+                <button
+                    class="spin-btn"
+                    id="spinButton"
+                    onclick="spinWheel()"
+                >
+                    🎡 SPIN THE WHEEL
+                </button>
+
+
+
+                <!-- ================= RESULT ================= -->
+
+                <div
+                    class="result"
+                    id="result"
+                >
+
+                    <div
+                        class="result-icon"
+                        id="resultIcon"
+                    >
+                        ✨
+                    </div>
+
+
+                    <div class="result-label">
+                        The Wheel Says You Are...
+                    </div>
+
+
+                    <h2 id="resultTitle">
+                        Wise Person
+                    </h2>
+
+
+                    <p
+                        class="result-message"
+                        id="resultMessage"
+                    ></p>
+
+
+                    <div class="result-note">
+                        💫 Keep this quality with you today!
+                    </div>
+
+                </div>
+
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        Made for a little positivity 💫
+
+        <div class="footer-brand">
+
+            Powered by
+
+            <span class="footer-brand-name">
+                RacharlaGPT.in
+            </span>
+
+        </div>
+
+    </footer>
+
+</div>
+
+
+
+    <section class="site-info" aria-label="About and site information">
+      <article class="info-card" id="about"><h2>About RacharlaGPT.in Games</h2>
+        <p>RacharlaGPT.in Games is a small collection of simple browser games created for short, enjoyable breaks. The goal is not competition or complicated rules. It gives visitors a quick way to refresh their attention with a dice roll, a coin toss, a classic Rock Paper Scissors round, a quick reaction test, a memory challenge, a 2048 puzzle, or a positive Spin Wheel.</p>
+        <p>Every game runs directly in your browser using HTML, CSS, and JavaScript. No account is required to play, and the games are designed to be quick to understand on phones and computers.</p>
+        <h3>Why these games?</h3><p>Small moments of play can be useful when you need a short pause between study, work, coding, or everyday tasks. Choose a game, play a round, and return to what you were doing. Results are random game outcomes and are provided for entertainment only.</p>
+      </article>
+      <article class="info-card" id="how-to-play"><h2>How to Play</h2>
+        <h3>🎲 Dice</h3><p>Press “Roll the Dice” and the game randomly selects a number from one to six. A six gets a special celebration message.</p>
+        <h3>🪙 Coin Toss</h3><p>Select the clearly marked <strong>🙂 HEADS</strong> or <strong>😎 TAILS</strong> side, then press “Flip Coin”. The result is randomly selected and compared with your choice.</p>
+        <h3>✊ Rock Paper Scissors</h3><p>Choose Rock, Paper, or Scissors. The game makes a random bot choice and shows whether you win, lose, or draw.</p>
+        <h3>⚡ Reaction Challenge</h3><p>Press Start, wait for the panel to turn green, then tap as quickly as possible. Faster reactions earn more points.</p>
+        <h3>🧠 Memory Match</h3><p>Open two cards at a time and try to remember their positions. Match all six pairs with as few moves as possible. The best result is stored locally in your browser.</p>
+        <h3>🔢 2048 Mini</h3><p>Use arrow keys or swipe to move the tiles. Equal numbers merge when they collide. Keep building tiles until you reach 2048 or no moves remain.</p>
+        <h3>🎡 Spin Wheel</h3><p>Press the Spin button or the wheel itself. The wheel animates through several rotations and lands on one of its positive qualities.</p>
+      </article>
+      <article class="info-card" id="privacy"><h2>Privacy Policy</h2><p><strong>Last updated: September 2026</strong></p>
+        <p>RacharlaGPT.in Games is designed to work without an account or a form asking you to submit personal information. Game score, streak, and best-dice values are saved only in the visitor’s own browser using local storage and are not sent to the site. The games themselves do not require your name, email address, phone number, or payment information.</p>
+        <h3>Information and hosting</h3><p>The site is hosted using GitHub Pages. Like most websites, the hosting provider may process technical information such as requests, browser information, IP address, and security logs as part of operating and protecting the service. Please refer to GitHub’s own privacy documentation for details about its processing.</p>
+        <h3>Cookies and advertising</h3><p>If advertising services such as Google AdSense are enabled in the future, those services may use cookies or similar technologies to provide, measure, and personalize advertising according to applicable policies and user choices. This page will be updated if advertising or other third-party services are added.</p>
+        <h3>Children</h3><p>The games are intended as general-audience entertainment. We do not intentionally request personal information from children through the games.</p>
+      </article>
+      <article class="info-card" id="terms"><h2>Terms of Use</h2><p>By using RacharlaGPT.in Games, you agree to use the site for lawful, personal entertainment and to respect the site and its users.</p>
+        <h3>Entertainment only</h3><p>Game results are generated randomly and are for entertainment. They should not be treated as predictions, financial advice, gambling advice, medical advice, psychological assessment, or a guarantee of any real-world outcome.</p>
+        <h3>Availability</h3><p>We aim to keep the games available and working, but the site is provided on an “as available” basis. Features may be updated, improved, or temporarily unavailable.</p>
+        <h3>Original work</h3><p>The original RacharlaGPT.in Games interface, game logic, branding, and original text are provided by RacharlaGPT unless otherwise stated. Please do not copy or redistribute the site as your own without permission.</p>
+      </article>
+    </section>
+    <footer class="site-footer"><div>© 2026 RacharlaGPT.in Games • Fun small games • quick refreshments</div><div class="footer-links"><a href="#about">About</a><a href="#how-to-play">How to Play</a><a href="#privacy">Privacy Policy</a><a href="#terms">Terms of Use</a><a href="https://racharlagpt.in" target="_blank" rel="noopener noreferrer">RacharlaGPT.in</a></div></footer>
+
+<script>
+
+/* =========================================================
+   WHEEL SETUP
+========================================================= */
+
+const canvas =
+    document.getElementById("wheel");
+
+const ctx =
+    canvas.getContext("2d");
+
+
+const spinButton =
+    document.getElementById("spinButton");
+
+
+const result =
+    document.getElementById("result");
+
+
+const resultIcon =
+    document.getElementById("resultIcon");
+
+
+const resultTitle =
+    document.getElementById("resultTitle");
+
+
+const resultMessage =
+    document.getElementById("resultMessage");
+
+
+const pointer =
+    document.getElementById("pointer");
+
+
+
+/* =========================================================
+   POSITIVE QUALITIES
+========================================================= */
+
+const qualities = [
+
+    {
+        title: "Wise Person",
+        icon: "🧠",
+        message:
+            "You think deeply, learn from experience, and make thoughtful choices. Your wisdom helps you see beyond the moment."
+    },
+
+    {
+        title: "Kind Person",
+        icon: "💖",
+        message:
+            "You care about how others feel and make people feel valued. Your kindness can make someone’s day brighter."
+    },
+
+    {
+        title: "Leader",
+        icon: "👑",
+        message:
+            "You have the courage to take responsibility, inspire others, and guide people toward a better future."
+    },
+
+    {
+        title: "Fighter",
+        icon: "🥊",
+        message:
+            "You don’t give up when life gets difficult. Your strength comes from getting back up and moving forward."
+    },
+
+    {
+        title: "Honest Person",
+        icon: "🤝",
+        message:
+            "You believe in truth, trust, and doing the right thing — even when it isn’t the easiest choice."
+    },
+
+    {
+        title: "Creative Soul",
+        icon: "🎨",
+        message:
+            "You see possibilities where others may see limits. Your imagination brings fresh ideas and new energy to the world."
+    },
+
+    {
+        title: "Brave Heart",
+        icon: "🦁",
+        message:
+            "You face challenges even when you feel afraid. Real courage is choosing to move forward anyway."
+    },
+
+    {
+        title: "Helper",
+        icon: "🫶",
+        message:
+            "You naturally look for ways to support the people around you. Your presence can make hard moments feel easier."
+    },
+
+    {
+        title: "Dreamer",
+        icon: "🌟",
+        message:
+            "You believe there is always something better ahead. Your dreams give you hope, purpose, and a reason to keep moving."
+    },
+
+    {
+        title: "Problem Solver",
+        icon: "💡",
+        message:
+            "You look for answers instead of giving up. Your curiosity and determination help turn problems into possibilities."
+    },
+
+    {
+        title: "Positive Soul",
+        icon: "☀️",
+        message:
+            "You bring hope, warmth, and good energy wherever you go. Your positivity can inspire you and others."
+    },
+
+    {
+        title: "Calm Mind",
+        icon: "🧘",
+        message:
+            "You know the value of pausing, thinking, and responding with patience. Your calmness can bring balance to difficult moments."
+    }
+
+];
+
+
+const colors = [
+
+    "#123F87",
+    "#C58C20",
+    "#0C2C68",
+    "#D5A62E",
+    "#174D9B",
+    "#B87C18",
+    "#103A7D",
+    "#E0B238",
+    "#0B326F",
+    "#C99224",
+    "#15468F",
+    "#D3A02B"
+
+];
+
+
+const total =
+    qualities.length;
+
+
+let rotation = 0;
+
+let spinning = false;
+
+
+
+/* =========================================================
+   DRAW WHEEL
+========================================================= */
+
+function drawWheel() {
+
+    const size =
+        canvas.width;
+
+    const center =
+        size / 2;
+
+    const radius =
+        270;
+
+
+    ctx.clearRect(
+        0,
+        0,
+        size,
+        size
+    );
+
+
+    /* OUTER GLOW */
+
+    ctx.save();
+
+    ctx.beginPath();
+
+    ctx.arc(
+        center,
+        center,
+        radius + 15,
+        0,
+        Math.PI * 2
+    );
+
+    ctx.shadowColor =
+        "rgba(255,215,106,.65)";
+
+    ctx.shadowBlur =
+        25;
+
+    ctx.strokeStyle =
+        "#f9d568";
+
+    ctx.lineWidth =
+        8;
+
+    ctx.stroke();
+
+    ctx.restore();
+
+
+
+    const slice =
+        Math.PI * 2 / total;
+
+
+    for (
+        let i = 0;
+        i < total;
+        i++
+    ) {
+
+        const start =
+            rotation +
+            i * slice -
+            Math.PI / 2;
+
+        const end =
+            start + slice;
+
+
+        /* SLICE */
+
+        ctx.beginPath();
+
+        ctx.moveTo(
+            center,
+            center
+        );
+
+        ctx.arc(
+            center,
+            center,
+            radius,
+            start,
+            end
+        );
+
+        ctx.closePath();
+
+
+        const gradient =
+            ctx.createLinearGradient(
+                center - radius,
+                center - radius,
+                center + radius,
+                center + radius
+            );
+
+
+        gradient.addColorStop(
+            0,
+            colors[i]
+        );
+
+        gradient.addColorStop(
+            .55,
+            colors[i]
+        );
+
+        gradient.addColorStop(
+            1,
+            "#06142f"
+        );
+
+
+        ctx.fillStyle =
+            gradient;
+
+        ctx.fill();
+
+
+        ctx.lineWidth =
+            3;
+
+        ctx.strokeStyle =
+            "rgba(255,235,155,.75)";
+
+        ctx.stroke();
+
+
+
+        /* ICON */
+
+        const middle =
+            start + slice / 2;
+
+        const iconRadius =
+            radius * .69;
+
+
+        const x =
+            center +
+            Math.cos(middle) *
+            iconRadius;
+
+
+        const y =
+            center +
+            Math.sin(middle) *
+            iconRadius;
+
+
+        ctx.save();
+
+        ctx.translate(
+            x,
+            y
+        );
+
+
+        ctx.font =
+            "28px Segoe UI Emoji";
+
+        ctx.textAlign =
+            "center";
+
+        ctx.textBaseline =
+            "middle";
+
+
+        ctx.shadowColor =
+            "rgba(0,0,0,.5)";
+
+        ctx.shadowBlur =
+            5;
+
+
+        ctx.fillText(
+            qualities[i].icon,
+            0,
+            -12
+        );
+
+
+
+        /* LABEL */
+
+        ctx.font =
+            "bold 15px Segoe UI";
+
+        ctx.fillStyle =
+            "#ffffff";
+
+
+        const words =
+            qualities[i]
+                .title
+                .split(" ");
+
+
+        let lines = [];
+
+        let current = "";
+
+
+        for (
+            const word of words
+        ) {
+
+            const test =
+                current +
+                (current ? " " : "") +
+                word;
+
+
+            if (
+                ctx.measureText(test).width >
+                100
+            ) {
+
+                lines.push(
+                    current
+                );
+
+                current =
+                    word;
+
+            } else {
+
+                current =
+                    test;
+
+            }
+
+        }
+
+
+        if (current) {
+            lines.push(current);
+        }
+
+
+        lines.forEach(
+            (line, index) => {
+
+                ctx.fillText(
+                    line,
+                    0,
+                    17 + index * 18
+                );
+
+            }
+        );
+
+
+        ctx.restore();
+
+    }
+
+
+
+    /* =====================================================
+       CENTER CIRCLE
+    ===================================================== */
+
+    ctx.save();
+
+
+    const centerGradient =
+        ctx.createRadialGradient(
+            center,
+            center,
+            5,
+            center,
+            center,
+            72
+        );
+
+
+    centerGradient.addColorStop(
+        0,
+        "#fff2a4"
+    );
+
+    centerGradient.addColorStop(
+        .4,
+        "#ffd451"
+    );
+
+    centerGradient.addColorStop(
+        1,
+        "#9b6d16"
+    );
+
+
+    ctx.beginPath();
+
+    ctx.arc(
+        center,
+        center,
+        72,
+        0,
+        Math.PI * 2
+    );
+
+
+    ctx.fillStyle =
+        centerGradient;
+
+
+    ctx.shadowColor =
+        "rgba(255,215,106,.85)";
+
+    ctx.shadowBlur =
+        30;
+
+
+    ctx.fill();
+
+
+    ctx.lineWidth =
+        5;
+
+    ctx.strokeStyle =
+        "#fff3b1";
+
+    ctx.stroke();
+
+
+    /* CENTER ICON */
+
+    ctx.shadowBlur =
+        0;
+
+    ctx.font =
+        "45px Segoe UI Emoji";
+
+    ctx.textAlign =
+        "center";
+
+    ctx.textBaseline =
+        "middle";
+
+
+    ctx.fillText(
+        "🎡",
+        center,
+        center
+    );
+
+
+    ctx.restore();
+
+
+
+    /* OUTER RING */
+
+    ctx.beginPath();
+
+    ctx.arc(
+        center,
+        center,
+        radius,
+        0,
+        Math.PI * 2
+    );
+
+
+    ctx.strokeStyle =
+        "#ffe38a";
+
+    ctx.lineWidth =
+        7;
+
+    ctx.stroke();
+
+}
+
+
+
+/* =========================================================
+   SPIN
+========================================================= */
+
+function spinWheel() {
+    rgAnalyticsEvent('game_play',{game_name:'spin_wheel'});
+
+    if (spinning) {
+        return;
+    }
+
+
+    spinning = true;
+    rgEnsureAudio();
+    rgPlaySfx('click');
+    rgSpinTickAngle = -1;
+
+
+    spinButton.disabled =
+        true;
+
+
+    spinButton.textContent =
+        "✨ SPINNING...";
+
+
+    result.classList.remove(
+        "show"
+    );
+
+
+    pointer.classList.add(
+        "spinning"
+    );
+
+
+
+    /* RANDOM WINNER */
+
+    const winner =
+        Math.floor(
+            Math.random() * total
+        );
+
+
+    const slice =
+        Math.PI * 2 / total;
+
+
+    /*
+        Pointer is at the top.
+        Calculate rotation so selected
+        slice finishes under pointer.
+    */
+
+    const targetCenter =
+        winner * slice +
+        slice / 2;
+
+
+    const currentNormalized =
+        rotation %
+        (Math.PI * 2);
+
+
+    const desired =
+        -targetCenter;
+
+
+    let delta =
+        desired -
+        currentNormalized;
+
+
+    while (delta < 0) {
+
+        delta +=
+            Math.PI * 2;
+
+    }
+
+
+    /* 7–9 FULL ROTATIONS */
+
+    const extraSpins =
+        (
+            7 +
+            Math.floor(
+                Math.random() * 3
+            )
+        ) *
+        Math.PI * 2;
+
+
+    const startRotation =
+        rotation;
+
+
+    const finalRotation =
+        rotation +
+        extraSpins +
+        delta;
+
+
+    const duration =
+        6000 +
+        Math.random() * 1200;
+
+
+    const startTime =
+        performance.now();
+
+
+
+    function animate(now) {
+
+        const elapsed =
+            now -
+            startTime;
+
+
+        let progress =
+            Math.min(
+                elapsed /
+                duration,
+                1
+            );
+
+
+        /* PREMIUM EASE OUT */
+
+        const eased =
+            1 -
+            Math.pow(
+                1 - progress,
+                4
+            );
+
+
+        rotation =
+            startRotation +
+            (
+                finalRotation -
+                startRotation
+            ) *
+            eased;
+
+        if (typeof rgSpinSound === 'function') rgSpinSound(rotation);
+
+        drawWheel();
+        rgSpinSound(rotation);
+
+
+        if (progress < 1) {
+
+            requestAnimationFrame(
+                animate
+            );
+
+        } else {
+
+            rotation =
+                finalRotation;
+
+
+            drawWheel();
+
+
+            finishSpin(
+                winner
+            );
+
+        }
+
+    }
+
+
+    requestAnimationFrame(
+        animate
+    );
+
+}
+
+
+
+/* =========================================================
+   FINISH
+========================================================= */
+
+function finishSpin(winner) {
+
+    spinning = false;
+
+
+    pointer.classList.remove(
+        "spinning"
+    );
+    rgPlaySfx('win');
+
+
+    setTimeout(
+        () => {
+
+            resultIcon.textContent =
+                qualities[winner].icon;
+
+
+            resultTitle.textContent =
+                qualities[winner].title;
+
+
+            resultMessage.textContent =
+                qualities[winner].message;
+
+            rgPlaySfx('win');
+            rgAnalyticsEvent('game_completed',{game_name:'spin_wheel',result:qualities[winner].title});
+
+
+            result.classList.add(
+                "show"
+            );
+
+
+            spinButton.disabled =
+                false;
+
+
+            spinButton.textContent =
+                "🔄 SPIN AGAIN";
+
+        },
+        350
+    );
+
+}
+
+
+
+/* =========================================================
+   INITIAL DRAW
+========================================================= */
+
+drawWheel();
+
+
+
+/* =========================================================
+   CLICK WHEEL TO SPIN
+========================================================= */
+
+canvas.addEventListener(
+    "click",
+    () => {
+
+        if (!spinning) {
+
+            spinWheel();
+
+        }
+
+    }
+);
+
+
+/* ================= NEON AUDIO ENGINE ================= */
+let rgAudioCtx=null, rgMasterGain=null, rgMusicGain=null, rgSfxGain=null;
+let rgMusicTimer=null, rgMusicStep=0, rgSoundsOn=true, rgMusicOn=false;
+let rgSpinTickAngle=0;
+
+function rgEnsureAudio(){
+  const AC=window.AudioContext||window.webkitAudioContext;
+  if(!AC) return false;
+  if(!rgAudioCtx){
+    rgAudioCtx=new AC();
+    rgMasterGain=rgAudioCtx.createGain();
+    rgMasterGain.gain.value=.72;
+    rgMasterGain.connect(rgAudioCtx.destination);
+    rgMusicGain=rgAudioCtx.createGain();
+    rgMusicGain.gain.value=.10;
+    rgMusicGain.connect(rgMasterGain);
+    rgSfxGain=rgAudioCtx.createGain();
+    rgSfxGain.gain.value=.42;
+    rgSfxGain.connect(rgMasterGain);
+  }
+  if(rgAudioCtx.state==='suspended') rgAudioCtx.resume();
+  return true;
+}
+
+function rgTone(freq,duration,type='sine',volume=.18,when=0,output='sfx'){
+  if(!rgEnsureAudio() || (output==='sfx' && !rgSoundsOn)) return;
+  const osc=rgAudioCtx.createOscillator();
+  const gain=rgAudioCtx.createGain();
+  const t=rgAudioCtx.currentTime+when;
+  osc.type=type;
+  osc.frequency.setValueAtTime(freq,t);
+  gain.gain.setValueAtTime(.0001,t);
+  gain.gain.exponentialRampToValueAtTime(Math.max(.0002,volume),t+.012);
+  gain.gain.exponentialRampToValueAtTime(.0001,t+duration);
+  osc.connect(gain);
+  gain.connect(output==='music'?rgMusicGain:rgSfxGain);
+  osc.start(t);
+  osc.stop(t+duration+.04);
+}
+
+function rgPlaySfx(kind){
+  if(!rgSoundsOn) return;
+  if(kind==='click'){ rgTone(520,.055,'square',.045); }
+  else if(kind==='dice'){ rgTone(220,.08,'triangle',.12); rgTone(330,.06,'triangle',.08,.07); }
+  else if(kind==='toss'){ rgTone(260,.07,'triangle',.10); rgTone(420,.08,'triangle',.08,.08); }
+  else if(kind==='tick'){ rgTone(780,.035,'square',.035); }
+  else if(kind==='reaction'){ rgTone(300,.10,'sine',.08); }
+  else if(kind==='green'){ rgTone(880,.12,'sine',.12); rgTone(1175,.16,'sine',.09,.08); }
+  else if(kind==='win'){ rgTone(523,.10,'sine',.12); rgTone(659,.10,'sine',.10,.10); rgTone(784,.18,'sine',.10,.20); }
+  else if(kind==='lose'){ rgTone(330,.12,'sine',.07); rgTone(220,.18,'sine',.06,.12); }
+}
+
+function rgMusicBeat(){
+  if(!rgMusicOn || !rgEnsureAudio()) return;
+  const melody=[261.63,329.63,392.00,329.63,293.66,349.23,440.00,349.23];
+  const bass=[130.81,130.81,146.83,146.83,110.00,110.00,123.47,123.47];
+  rgTone(melody[rgMusicStep%melody.length],.24,'sine',.055,0,'music');
+  rgTone(bass[rgMusicStep%bass.length],.32,'triangle',.035,0,'music');
+  rgMusicStep++;
+}
+
+function startGameMusic(){
+  if(rgMusicOn) return;
+  if(!rgEnsureAudio()) return;
+  rgMusicOn=true;
+  rgMusicStep=0;
+  rgMusicBeat();
+  clearInterval(rgMusicTimer);
+  rgMusicTimer=setInterval(rgMusicBeat,420);
+  const b=document.getElementById('musicToggle');
+  if(b){b.textContent='🎵 Music: ON';b.classList.add('on');}
+}
+
+function stopGameMusic(){
+  rgMusicOn=false;
+  clearInterval(rgMusicTimer);
+  rgMusicTimer=null;
+  const b=document.getElementById('musicToggle');
+  if(b){b.textContent='🎵 Music: OFF';b.classList.remove('on');}
+}
+
+function toggleGameMusic(){
+  if(rgMusicOn) stopGameMusic(); else startGameMusic();
+}
+
+function toggleGameSound(){
+  rgSoundsOn=!rgSoundsOn;
+  if(rgSoundsOn){ rgEnsureAudio(); rgPlaySfx('click'); }
+  const b=document.getElementById('soundToggle');
+  if(b){
+    b.textContent=rgSoundsOn?'🔊 Sound: ON':'🔇 Sound: OFF';
+    b.classList.toggle('on',rgSoundsOn);
+  }
+}
+
+function rgSpinSound(rotation){
+  const two=Math.PI*2;
+  const normalized=((rotation%two)+two)%two;
+  const step=Math.floor(normalized/(Math.PI*2/12));
+  if(step!==rgSpinTickAngle){
+    rgSpinTickAngle=step;
+    rgPlaySfx('tick');
+  }
+}
+
+/* ================= NEON MINI GAMES ================= */
+const tossGame=document.getElementById('tossGame'),diceGame=document.getElementById('diceGame'),rpsGame=document.getElementById('rpsGame'),reactionGame=document.getElementById('reactionGame'),tabSpin=document.getElementById('tabSpin'),tabToss=document.getElementById('tabToss'),tabDice=document.getElementById('tabDice'),tabRps=document.getElementById('tabRps'),tabReaction=document.getElementById('tabReaction');
+let coinChoice='',score=Number(localStorage.getItem('rg_score')||0),streak=Number(localStorage.getItem('rg_streak')||0),bestDice=Number(localStorage.getItem('rg_best_dice')||0),reactionTimer=null,reactionArmed=false,reactionStartTime=0;
+function updateStats(){document.getElementById('scoreValue').textContent=score;document.getElementById('streakValue').textContent=streak;document.getElementById('bestValue').textContent=bestDice;localStorage.setItem('rg_score',score);localStorage.setItem('rg_streak',streak);localStorage.setItem('rg_best_dice',bestDice)}
+function award(points){score+=points;streak++;updateStats()}
+function miss(){streak=0;updateStats()}
+function showGame(g){[tossGame,diceGame,rpsGame,reactionGame].forEach(x=>x.classList.remove('show'));[tabSpin,tabToss,tabDice,tabRps,tabReaction].forEach(x=>x.classList.remove('active'));if(g==='toss'){tossGame.classList.add('show');tabToss.classList.add('active');tossGame.scrollIntoView({behavior:'smooth',block:'start'})}else if(g==='dice'){diceGame.classList.add('show');tabDice.classList.add('active');diceGame.scrollIntoView({behavior:'smooth',block:'start'})}else if(g==='rps'){rpsGame.classList.add('show');tabRps.classList.add('active');rpsGame.scrollIntoView({behavior:'smooth',block:'start'})}else if(g==='reaction'){reactionGame.classList.add('show');tabReaction.classList.add('active');reactionGame.scrollIntoView({behavior:'smooth',block:'start'})}else{tabSpin.classList.add('active');document.querySelector('.game-card').scrollIntoView({behavior:'smooth',block:'start'})}}
+function setCoinChoice(c){coinChoice=c;document.getElementById('headsBtn').classList.toggle('selected',c==='Heads');document.getElementById('tailsBtn').classList.toggle('selected',c==='Tails');document.getElementById('tossResult').textContent='You picked '+c+'. Now flip the coin!'}
+function tossCoin(){rgAnalyticsEvent('game_play',{game_name:'coin_toss'});rgPlaySfx('toss');if(!coinChoice){document.getElementById('tossResult').textContent='⚡ Pick Heads or Tails first!';return}const b=document.getElementById('tossButton'),c=document.getElementById('coin'),r=document.getElementById('tossResult');b.disabled=true;r.textContent='✨ FLIPPING...';c.classList.remove('flipping');void c.offsetWidth;c.classList.add('flipping');setTimeout(()=>{const w=Math.random()<.5?'Heads':'Tails';if(w===coinChoice){r.textContent='🎉 '+w+'! YOU WON! +10';award(10)}else{r.textContent='💫 '+w+'! TRY AGAIN!';miss()}c.textContent=w==='Heads'?'🙂':'😎';b.disabled=false},900)}
+const diceFaces=['⚀','⚁','⚂','⚃','⚄','⚅'];function rollDice(){rgAnalyticsEvent('game_play',{game_name:'dice'});rgPlaySfx('dice');const b=document.getElementById('diceButton'),d=document.getElementById('dice'),r=document.getElementById('diceResult');b.disabled=true;r.textContent='✨ ROLLING...';d.classList.remove('rolling');void d.offsetWidth;d.classList.add('rolling');let n=0;const x=setInterval(()=>{d.textContent=diceFaces[Math.floor(Math.random()*6)];if(++n>=8){clearInterval(x);const v=Math.floor(Math.random()*6)+1;d.textContent=diceFaces[v-1];if(v>bestDice)bestDice=v;const pts=v===6?30:5;award(pts);r.textContent=v===6?'🔥 SIX! JACKPOT ROLL! +30':'🎯 You rolled '+v+'! +5';updateStats();b.disabled=false}},90)}
+function playRps(choice){rgAnalyticsEvent('game_play',{game_name:'rock_paper_scissors'});rgPlaySfx('click');const bot=['Rock','Paper','Scissors'][Math.floor(Math.random()*3)];const icons={Rock:'✊',Paper:'✋',Scissors:'✌️'};document.getElementById('rpsYou').textContent=icons[choice];document.getElementById('rpsBot').textContent=icons[bot];let msg;if(choice===bot){msg='🤝 DRAW!';miss()}else if((choice==='Rock'&&bot==='Scissors')||(choice==='Paper'&&bot==='Rock')||(choice==='Scissors'&&bot==='Paper')){msg='🎉 YOU WIN! +15';award(15)}else{msg='💫 BOT WINS — TRY AGAIN!';miss()}document.getElementById('rpsResult').textContent=msg}
+function startReaction(){rgAnalyticsEvent('game_play',{game_name:'reaction_challenge'});rgPlaySfx('reaction');clearTimeout(reactionTimer);const b=document.getElementById('reactionButton'),light=document.getElementById('reactionLight'),r=document.getElementById('reactionResult');reactionArmed=false;b.disabled=true;light.className='reaction-light';light.textContent='WAIT...';r.textContent='⏳ Wait for GREEN — do not tap early!';const delay=1200+Math.random()*3200;reactionTimer=setTimeout(()=>{reactionArmed=true;reactionStartTime=performance.now();light.className='reaction-light go';light.textContent='GO!';r.textContent='⚡ TAP NOW!';rgPlaySfx('green')},delay)}
+function reactionTap(){if(!reactionArmed)return;const ms=Math.round(performance.now()-reactionStartTime);reactionArmed=false;document.getElementById('reactionButton').disabled=false;const light=document.getElementById('reactionLight');light.className='reaction-light';light.textContent='DONE';const pts=ms<250?30:ms<400?20:10;award(pts);document.getElementById('reactionResult').textContent='🏁 '+ms+' ms reaction! +'+pts+' points'}
+document.getElementById('reactionLight').addEventListener('click',()=>{if(!reactionArmed){if(document.getElementById('reactionButton').disabled){document.getElementById('reactionResult').textContent='⏱️ Too early! Wait for green.';clearTimeout(reactionTimer);document.getElementById('reactionButton').disabled=false;miss()}}else reactionTap()});
+updateStats();showGame('dice');
+
+[tabDice,tabToss,tabRps,tabReaction,tabSpin].forEach(function(tab){
+  if(tab) tab.addEventListener('click',function(){rgPlaySfx('click');});
+});
+
+// Keep audio silent until the visitor explicitly enables it.
+rgSoundsOn=true;
+rgMusicOn=false;
+
+
+
+/* ================= MEMORY MATCH GAME ================= */
+const memoryIcons=['🧠','🚀','🎯','🎨','💡','⭐'];
+let memoryDeck=[],memoryOpen=[],memoryLocked=false,memoryMoves=0,memoryPairs=0;
+function shuffleArray(arr){for(let i=arr.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[arr[i],arr[j]]=[arr[j],arr[i]]}return arr}
+function newMemoryGame(){
+  memoryDeck=shuffleArray([...memoryIcons,...memoryIcons].map((icon,i)=>({id:i,icon,matched:false}))); memoryOpen=[]; memoryLocked=false; memoryMoves=0; memoryPairs=0;
+  const board=document.getElementById('memoryBoard'); if(!board)return; board.innerHTML='';
+  document.getElementById('memoryMoves').textContent='Moves: 0'; document.getElementById('memoryPairs').textContent='Pairs: 0/6';
+  const best=localStorage.getItem('rg_memory_best'); document.getElementById('memoryBest').textContent='Best: '+(best||'—'); document.getElementById('memoryResult').textContent='Find the matching pairs.';
+  memoryDeck.forEach((card,idx)=>{const b=document.createElement('button');b.className='memory-card';b.type='button';b.dataset.index=idx;b.textContent='?';b.setAttribute('aria-label','Hidden memory card');b.onclick=()=>flipMemory(idx);board.appendChild(b)});
+  rgAnalyticsEvent('game_start',{game_name:'memory_match'}); rgPlaySfx('click');
+}
+function flipMemory(idx){
+  if(memoryLocked)return; const card=memoryDeck[idx]; const el=document.querySelector(`.memory-card[data-index="${idx}"]`); if(!el||card.matched||memoryOpen.includes(idx))return;
+  el.textContent=card.icon; el.classList.add('flipped'); memoryOpen.push(idx); rgPlaySfx('click');
+  if(memoryOpen.length<2)return;
+  memoryMoves++; document.getElementById('memoryMoves').textContent='Moves: '+memoryMoves; const [a,b]=memoryOpen;
+  if(memoryDeck[a].icon===memoryDeck[b].icon){
+    memoryDeck[a].matched=memoryDeck[b].matched=true; document.querySelectorAll(`.memory-card[data-index="${a}"], .memory-card[data-index="${b}"]`).forEach(x=>x.classList.add('matched')); memoryPairs++; memoryOpen=[]; document.getElementById('memoryPairs').textContent='Pairs: '+memoryPairs+'/6'; rgPlaySfx('win');
+    if(memoryPairs===6){const old=Number(localStorage.getItem('rg_memory_best')||999);if(memoryMoves<old)localStorage.setItem('rg_memory_best',memoryMoves);document.getElementById('memoryBest').textContent='Best: '+Math.min(memoryMoves,old);document.getElementById('memoryResult').textContent='🎉 All pairs matched in '+memoryMoves+' moves!';rgAnalyticsEvent('game_completed',{game_name:'memory_match',moves:memoryMoves});}
+  }else{
+    memoryLocked=true; setTimeout(()=>{[a,b].forEach(i=>{const x=document.querySelector(`.memory-card[data-index="${i}"]`);if(x){x.textContent='?';x.classList.remove('flipped')}}); memoryOpen=[]; memoryLocked=false; rgPlaySfx('lose');},650);
+  }
+}
+
+/* ================= 2048 MINI GAME ================= */
+let grid2048=[],score2048=0,best2048=Number(localStorage.getItem('rg_2048_best')||0),game2048Over=false;
+function empty2048(){return Array.from({length:16},()=>0)}
+function add2048Tile(){const empty=grid2048.map((v,i)=>v===0?i:-1).filter(i=>i>=0);if(!empty.length)return;const i=empty[Math.floor(Math.random()*empty.length)];grid2048[i]=Math.random()<.9?2:4}
+function draw2048(){const g=document.getElementById('game2048Grid');if(!g)return;g.innerHTML='';grid2048.forEach(v=>{const d=document.createElement('div');d.className='tile2048'+(v>1?' v'+v:'');d.textContent=v?v:'';g.appendChild(d)});document.getElementById('score2048').textContent='Score: '+score2048;document.getElementById('best2048').textContent='Best: '+Math.max(best2048,score2048)}
+function slideLine(line){const vals=line.filter(Boolean);let gained=0;for(let i=0;i<vals.length-1;i++){if(vals[i]===vals[i+1]){vals[i]*=2;gained+=vals[i];vals.splice(i+1,1)}}while(vals.length<4)vals.push(0);return [vals,gained]}
+function move2048(dir){if(game2048Over)return false;let changed=false,gained=0;const next=empty2048();const at=(r,c)=>r*4+c;
+  for(let i=0;i<4;i++){
+    let line=[];for(let j=0;j<4;j++){const idx=dir==='left'||dir==='right'?at(i,j):at(j,i);line.push(grid2048[idx])}
+    if(dir==='right'||dir==='down')line.reverse();const res=slideLine(line);line=res[0];gained+=res[1];if(dir==='right'||dir==='down')line.reverse();
+    for(let j=0;j<4;j++){const idx=dir==='left'||dir==='right'?at(i,j):at(j,i);if(next[idx]!==line[j])changed=true;next[idx]=line[j]}
+  }
+  if(!changed)return false; grid2048=next;score2048+=gained;add2048Tile();if(score2048>best2048){best2048=score2048;localStorage.setItem('rg_2048_best',best2048)}draw2048();rgPlaySfx('click');
+  if(grid2048.includes(2048)){document.getElementById('game2048Result').textContent='🏆 2048 reached! Keep going or start a new board.';rgPlaySfx('win');rgAnalyticsEvent('game_completed',{game_name:'2048',score:score2048,result:'reached_2048'})}
+  else if(!canMove2048()){game2048Over=true;document.getElementById('game2048Result').textContent='💫 No more moves. Try again!';rgPlaySfx('lose');rgAnalyticsEvent('game_completed',{game_name:'2048',score:score2048,result:'game_over'})}
+  else document.getElementById('game2048Result').textContent='Keep combining!';
+  return true;
+}
+function canMove2048(){for(let i=0;i<16;i++){if(grid2048[i]===0)return true;const r=Math.floor(i/4),c=i%4;if(c<3&&grid2048[i]===grid2048[i+1])return true;if(r<3&&grid2048[i]===grid2048[i+4])return true}return false}
+function new2048Game(){grid2048=empty2048();score2048=0;game2048Over=false;add2048Tile();add2048Tile();draw2048();document.getElementById('game2048Result').textContent='Use arrow keys or swipe to start.';document.getElementById('game2048Grid')?.focus();rgAnalyticsEvent('game_start',{game_name:'2048'});rgPlaySfx('click')}
+window.addEventListener('keydown',e=>{const map={ArrowLeft:'left',ArrowRight:'right',ArrowUp:'up',ArrowDown:'down'};if(map[e.key]){const active=document.getElementById('game2048');if(active?.classList.contains('show')){e.preventDefault();move2048(map[e.key])}}});
+let touch2048=null;document.getElementById('game2048Grid')?.addEventListener('touchstart',e=>{const t=e.changedTouches[0];touch2048={x:t.clientX,y:t.clientY}},{passive:true});document.getElementById('game2048Grid')?.addEventListener('touchend',e=>{if(!touch2048)return;const t=e.changedTouches[0],dx=t.clientX-touch2048.x,dy=t.clientY-touch2048.y;touch2048=null;if(Math.max(Math.abs(dx),Math.abs(dy))<25)return;move2048(Math.abs(dx)>Math.abs(dy)?(dx>0?'right':'left'):(dy>0?'down':'up'))},{passive:true});
+
+/* ================= EXTEND GAME NAVIGATION ================= */
+(function(){
+  const memoryGame=document.getElementById('memoryGame'),game2048=document.getElementById('game2048');
+  const tabMemory=document.getElementById('tabMemory'),tab2048=document.getElementById('tab2048');
+  const originalShow=window.showGame;
+  window.showGame=function(g){
+    [memoryGame,game2048].forEach(x=>x&&x.classList.remove('show'));
+    [tabMemory,tab2048].forEach(x=>x&&x.classList.remove('active'));
+    if(g==='memory'){memoryGame.classList.add('show');tabMemory.classList.add('active');memoryGame.scrollIntoView({behavior:'smooth',block:'start'});rgAnalyticsEvent('game_select',{game_name:'memory_match'});return}
+    if(g==='2048'){game2048.classList.add('show');tab2048.classList.add('active');game2048.scrollIntoView({behavior:'smooth',block:'start'});rgAnalyticsEvent('game_select',{game_name:'2048'});return}
+    originalShow(g);
+  };
+})();
+
+/* ================= NON-DISRUPTIVE SITE UPDATE CHECK ================= */
+(function(){
+  const localBuild=(document.querySelector('meta[name="rg-build"]')||{}).content||'';
+  const storedKey='rg_seen_build';
+  const stored=localStorage.getItem(storedKey);
+  const box=document.getElementById('rgUpdate'),btn=document.getElementById('rgUpdateBtn'),close=document.getElementById('rgUpdateClose'),title=document.getElementById('rgUpdateTitle'),text=document.getElementById('rgUpdateText');
+  function showUpdate(remote){if(!box)return; title.textContent='✨ New version available'; text.textContent='A newer RacharlaGPT.in Games build ('+remote+') is ready. Refresh when you are ready.'; box.classList.add('show'); rgAnalyticsEvent('update_available',{from_build:localBuild,to_build:remote});}
+  btn?.addEventListener('click',()=>{rgAnalyticsEvent('update_refresh',{from_build:localBuild});location.reload()});
+  close?.addEventListener('click',()=>box.classList.remove('show'));
+  if(localBuild && stored && stored!==localBuild){
+    title.textContent='✅ Game updated'; text.textContent='You are using the latest RacharlaGPT.in Games version ('+localBuild+').'; box.classList.add('show'); setTimeout(()=>box.classList.remove('show'),5000);
+  }
+  if(localBuild)localStorage.setItem(storedKey,localBuild);
+  setInterval(async()=>{
+    try{
+      const u=location.href.split('#')[0]+'?rgcheck='+Date.now();
+      const r=await fetch(u,{cache:'no-store',headers:{'Cache-Control':'no-cache'}}); if(!r.ok)return;
+      const html=await r.text(); const m=html.match(/<meta[^>]*name=["']rg-build["'][^>]*content=["']([^"']+)["']/i); const remote=m?m[1]:''; if(remote && localBuild && remote!==localBuild)showUpdate(remote);
+    }catch(_e){}
+  },30000);
+})();
+
+/* ================= AD-SAFE GAME EVENTS ================= */
+rgAnalyticsEvent('page_view_games',{site:'RacharlaGPT.in Games',build:'2026.09.16.5'});
+document.querySelectorAll('a[href="https://racharlagpt.in"]').forEach(a=>a.addEventListener('click',()=>rgAnalyticsEvent('brand_visit',{destination:'racharlagpt.in'})));
+
+/* INIT NEW GAMES */
+newMemoryGame();
+new2048Game();
+
+</script>
+
+</body>
+</html>
