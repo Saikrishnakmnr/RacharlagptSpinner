@@ -1,0 +1,9 @@
+const CACHE='racharlagpt-play-v11-darshan';
+const SHELL=['/','/index.html','/assets/style.css','/games/divine-spin.html','/games/divine-quiz.html','/games/divine-reveal.html','/games/divine-memory.html','/assets/divine-games.css','/assets/divine-games.js','/assets/divine-questions.json','/assets/divine.css','/assets/divine.js','/assets/divine-audio.js','/assets/divine-image-loader.js','/assets/darshan-slideshow.js','/assets/divine-art/temple.svg','/assets/divine-art/shiva.svg','/assets/divine-art/vishnu.svg','/assets/divine-art/lakshmi.svg','/assets/divine-art/ganesha.svg','/assets/divine-art/hanuman.svg','/assets/divine-art/surya.svg','/assets/divine-art/saraswati.svg','/assets/divine-art/durga.svg','/assets/app.js','/assets/catalog.js','/assets/core.js','/assets/games.js','/assets/config.js','/assets/3d-world.js','/assets/3d/snake.svg','/assets/3d/gamepad.svg','/assets/3d/rocket.svg','/assets/3d/brain.svg','/assets/3d/trophy.svg','/assets/3d/dice.svg','/assets/3d/target.svg','/assets/3d/star.svg','/assets/icon.svg','/manifest.webmanifest'];
+self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(SHELL)).then(()=>self.skipWaiting()));});
+self.addEventListener('activate',e=>{e.waitUntil(Promise.all([caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))),self.clients.claim()]));});
+self.addEventListener('fetch',e=>{
+ const r=e.request;
+ if(r.method!=='GET'||new URL(r.url).origin!==self.location.origin)return;
+ e.respondWith(fetch(r).then(response=>{if(response.ok){const copy=response.clone();caches.open(CACHE).then(c=>c.put(r,copy)).catch(()=>{});}return response;}).catch(()=>caches.match(r).then(cached=>cached|| (r.mode==='navigate'?caches.match('/index.html'):Response.error()))));
+});

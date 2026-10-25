@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /owner/
+Disallow: /tests/
+Sitemap: https://spin.racharlagpt.in/sitemap.xml

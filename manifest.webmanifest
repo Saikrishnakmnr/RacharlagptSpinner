@@ -1,0 +1,25 @@
+{
+  "name": "RacharlaGPT Play \u2014 20 Free Mini Games",
+  "short_name": "RacharlaGPT Play",
+  "description": "20 free arcade and devotional mini-games, daily challenges and personal records.",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#101119",
+  "theme_color": "#c4ff65",
+  "icons": [
+    {
+      "src": "/assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
