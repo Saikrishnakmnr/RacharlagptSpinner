@@ -11,7 +11,7 @@ const slides=[
 ['durga','జై దుర్గా మాతా • Goddess Durga','శక్తి మనలోనే ఉంది • Strength lives within.']
 ];let index=0,paused=false,custom=null,audio=null,objectUrl=null,ctx=null,osc=[],gain=null,musicOn=false;
 const dots=$('darshan-dots');slides.forEach((s,i)=>{const b=document.createElement('button');b.type='button';b.setAttribute('aria-label','Show '+s[1]);b.addEventListener('click',()=>show(i));dots.appendChild(b)});
-function imageSrc(key){return 'assets/divine-ai/'+key+'.webp'}
+function imageSrc(key){return 'assets/divine-ai/'+key+'.jpg'}
 function fallback(key){return 'assets/divine-art/'+key+'.svg'}
 function show(i){index=(i+slides.length+(custom?1:0))%(slides.length+(custom?1:0));const data=custom&&index===slides.length?custom:slides[index],img=$('darshan-image');img.onerror=()=>{img.onerror=null;img.src=fallback(data[0]||'temple')};img.src=custom&&index===slides.length?fallback('temple'):imageSrc(data[0]);img.alt=custom&&index===slides.length?'Business promotion preview':'Devotional artwork: '+data[1];img.classList.remove('darshan-fade');void img.offsetWidth;img.classList.add('darshan-fade');$('darshan-name').textContent=data[1];$('darshan-quote').textContent=data[2];Array.from(dots.children).forEach((b,j)=>b.setAttribute('aria-current',String(j===index)));if(custom&&index===slides.length){$('business-status').textContent='Private preview only — not published. '+custom[3]}}
 $('darshan-next').addEventListener('click',()=>show(index+1));$('darshan-prev').addEventListener('click',()=>show(index-1));$('darshan-pause').addEventListener('click',()=>{paused=!paused;$('darshan-pause').textContent=paused?'▶ Resume slides':'⏸ Pause slides';$('darshan-pause').setAttribute('aria-pressed',String(paused))});
