@@ -1,13 +1,13 @@
 {
-  "name": "RacharlaGPT Gameverse — 25 Free Arcade & Divine Games",
+  "name": "RacharlaGPT Gameverse \u2014 25 Free Arcade & Divine Games",
   "short_name": "RacharlaGPT Play",
   "description": "25 free arcade mini-games including Neon Racer, Galaxy Blaster, Sky Hop and four Divine games.",
   "id": "/",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
-  "background_color": "#101119",
-  "theme_color": "#c4ff65",
+  "background_color": "#080b20",
+  "theme_color": "#080b2a",
   "icons": [
     {
       "src": "/assets/icon-192.png",
