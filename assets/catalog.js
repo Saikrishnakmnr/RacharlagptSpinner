@@ -1,4 +1,10 @@
 export const games=[
+ ['racer','Neon Turbo Racer','Arcade','🏎️','Race traffic in a luminous highway!','Steer with arrows or ◀ ▶. Dodge cars, grab cyan energy gems and use BOOST. Three hearts. Fast arcade driving; no cash prizes.','points','high','pink'],
+ ['galaxy','Galaxy Blaster','Arcade','🚀','Blast through glowing alien waves!','Move with arrows or ◀ ▶, FIRE to shoot. Avoid enemies, collect golden power gems. Three hearts.','points','high','blue'],
+ ['runner','Temple Dash Runner','Arcade','🏃','Jump and dodge an endless neon temple path!','Move left/right; tap JUMP or Space over hazards, collect sacred lights and survive. Three hearts. Not a devotional game.','points','high','amber'],
+ ['bricks','Crystal Breaker','Arcade','💎','Smash neon bricks with a bouncing energy ball!','Move paddle with left/right. Press RELEASE to launch ball. Clear every block with three lives.','points','high','purple'],
+ ['skyhop','Sky Hop','Quick play','☁️','Bounce above the floating cloud platforms!','Move left/right, land on cloud platforms to bounce higher. Earn height points. Three lives.','points','high','green'],
+
  ['2048','2048','Puzzle','🔢','Merge a little. Think a little.','Slide with arrows, swipe, or the on-screen controls. Equal tiles combine once per move. Reach 2048, then keep going. A move that changes nothing never adds a tile.','points','high','amber'],
  ['memory','Memory Garden','Relax','🌸','A small garden for your memory.','Turn over two cards and find all six matching pairs. Take your time: fewer moves is better.','moves','low','pink'],
  ['snake','Neon Snake','Arcade','🐍','One more bite. One more turn.','Collect the glowing fruit. Use arrow keys, WASD or direction buttons. Avoid your tail and the edges. The game pauses when you leave the tab.','points','high','green'],

@@ -1,5 +1,7 @@
+import {launchArcade} from './arcade-plus.js';
 import {mergeLine,moveBoard,canMove,winner,bestMove,shuffle,toggleLights} from './core.js';
 export function launch(id,c){
+ if(launchArcade(id,c))return;
  const {root,button,status,done,later,on,random,beep}=c;
  const integer=n=>Math.floor(random()*n);
  const el=(tag,cls,text,parent=root)=>{const x=document.createElement(tag);x.className=cls||'';if(text!==undefined)x.textContent=text;parent.append(x);return x;};
