@@ -2,6 +2,7 @@
 const $=id=>document.getElementById(id);if(!$('darshan-image'))return;
 const slides=[
 ['shiva','ॐ నమః శివాయ • Lord Shiva','మనసులో శాంతిని కనుగొనండి • Find peace within.'],
+['venkateswara','ఓం నమో వెంకటేశాయ • Lord Venkateswara','భక్తి మార్గం శాంతిని ఇస్తుంది • Devotion brings peace.'],
 ['vishnu','శ్రీమన్నారాయణ • Lord Vishnu','ధర్మం మనకు మార్గదర్శి • Let goodness guide your path.'],
 ['lakshmi','శ్రీ మహాలక్ష్మి • Goddess Lakshmi','కృతజ్ఞతలో ఆనందం • Gratitude brings joy.'],
 ['ganesha','శ్రీ గణేశాయ నమః • Lord Ganesha','శుభారంభం • Every beginning holds possibility.'],
