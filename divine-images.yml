@@ -1,0 +1,23 @@
+name: Generate Divine AI Portraits
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Generate with Pollinations
+        env:
+          POLLINATIONS_KEY: ${{ secrets.POLLINATIONS_KEY }}
+        run: python scripts/generate_divine_images.py
+      - name: Commit generated portraits
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/divine-ai/*.jpg
+          git diff --cached --quiet || (git commit -m 'Update divine AI portraits' && git push)
