@@ -293,3 +293,68 @@ body{background:radial-gradient(ellipse 60% 45% at 94% 12%,#381179ba,transparent
 }
 @media(max-width:350px){.featured-neon-covers .new-arcade-tile{min-height:140px}.game-gallery-layout .game-tile .neon-cover{height:143px!important}}
 @media(prefers-reduced-motion:reduce){.featured-neon-covers .new-arcade-tile{transition:none}}
+
+/* HOTFIX 2026-10-25: prevent promotional 1024px poster images expanding card height on narrow or desktop-mode mobile viewports. Desktop >1100px intentionally unchanged. */
+@media (max-width:1100px) {
+  .arcade-featured .featured-games.featured-neon-covers {
+    display:grid!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:10px!important;
+    width:100%!important;
+    min-width:0!important;
+    align-items:stretch!important;
+  }
+  .arcade-featured .featured-games.featured-neon-covers > button.new-arcade-tile {
+    position:relative!important;
+    display:block!important;
+    box-sizing:border-box!important;
+    width:100%!important;
+    min-width:0!important;
+    height:220px!important;
+    min-height:0!important;
+    max-height:220px!important;
+    aspect-ratio:auto!important;
+    padding:0!important;
+    overflow:hidden!important;
+    border-radius:14px!important;
+  }
+  .arcade-featured .featured-games.featured-neon-covers > button.new-arcade-tile > img {
+    position:absolute!important;
+    top:0!important;left:0!important;right:0!important;bottom:0!important;
+    display:block!important;
+    width:100%!important;
+    height:100%!important;
+    max-width:100%!important;
+    max-height:100%!important;
+    min-width:0!important;
+    object-fit:cover!important;
+    object-position:center 34%!important;
+    margin:0!important;
+    transform:none!important;
+    pointer-events:none!important;
+  }
+  .arcade-featured .featured-games.featured-neon-covers .new-arcade-overlay {
+    position:absolute!important;
+    z-index:3!important;
+    bottom:0!important;top:auto!important;left:0!important;right:0!important;
+    display:flex!important;flex-direction:column!important;align-items:center!important;
+    padding:9px 4px!important;
+    background:linear-gradient(0deg,#03071bf5,#03071bb0 62%,transparent)!important;
+  }
+  .arcade-featured .featured-games.featured-neon-covers .new-arcade-overlay strong {
+    font-size:clamp(13px,1.5vw,17px)!important;
+    overflow-wrap:anywhere!important;
+  }
+  .arcade-featured .featured-games.featured-neon-covers .new-arcade-overlay small {font-size:10px!important}
+  .arcade-featured .featured-games.featured-neon-covers .new-arcade-overlay b {font-size:11px!important}
+}
+@media (max-width:600px) {
+  .arcade-featured .featured-games.featured-neon-covers > button.new-arcade-tile {
+    height:175px!important;
+    max-height:175px!important;
+  }
+  .arcade-featured .featured-games.featured-neon-covers .new-arcade-overlay small{display:none!important}
+}
+@media (max-width:360px){
+  .arcade-featured .featured-games.featured-neon-covers > button.new-arcade-tile{height:150px!important;max-height:150px!important}
+}
